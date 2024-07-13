@@ -1,0 +1,123 @@
+body {
+  background-color: #f4f8fb; /* Цвет фона страницы */
+}
+
+.rectangle {
+  position: relative;
+  margin: 10px auto; /* Небольшие отступы сверху и по бокам */
+  margin-bottom: 20px;
+  width: 300px; /* Ширина прямоугольника */
+  height: 235px; /* Увеличенная высота прямоугольника */
+  background-color: #1B1B1B; /* Черный фон */
+  border-radius: 40px; /* Скругление углов радиусом 40 */
+}
+
+.title {
+  position: absolute;
+  top: 35px; /* Отступ сверху */
+  left: 50%;
+  transform: translateX(-50%); /* Центрирование по горизонтали */
+  font-family: 'Sora', sans-serif; /* Шрифт Sora */
+  font-weight: 400; /* Тонкость regular */
+  font-size: 13px; /* Размер шрифта 13 */
+  color: #d0d0d0; /* Белый цвет текста */
+}
+
+.balance {
+  position: absolute;
+  top: 60px; /* Отступ сверху для второй надписи */
+  left: 50%;
+  transform: translateX(-50%); /* Центрирование по горизонтали */
+  font-family: 'Sora', sans-serif; /* Шрифт Sora */
+  font-weight: 300; /* Тонкость regular */
+  font-size: 32px; /* Размер шрифта 13 */
+  color: #fff; /* Белый цвет текста */
+}
+
+.balance::before {
+  content: '₽ '; /* Значок рубля и пробел перед надписью */
+  color: #d0d0d0; /* Серый цвет значка рубля */
+}
+
+.green-rectangle {
+  position: absolute;
+  top: 124px; /* Отступ сверху для зеленого прямоугольника */
+  left: 50%;
+  transform: translateX(-50%); /* Центрирование по горизонтали */
+  width: 232px; /* Ширина зеленого прямоугольника */
+  height: 87px; /* Высота зеленого прямоугольника */
+  background-color: #1adb5c; /* Зеленый фон */
+  border-radius: 20px;
+}
+
+.grey-rectangle {
+  position: absolute;
+  top: 1px; /* Отступ сверху для серого прямоугольника */
+  left: 50%;
+  transform: translateX(-50%); /* Центрирование по горизонтали */
+  width: 226px; /* Ширина серого прямоугольника */
+  height: 81px; /* Высота серого прямоугольника */
+  background-color: #3b3b3b; /* Серый фон */
+  border-radius: 19px;
+  border: 2px solid #1B1B1B; /* Обводка в 2 пикселя цвета черного прямоугольника */
+}
+
+.icon-circle {
+  position: absolute;
+  width: 45px; /* Диаметр круга */
+  height: 45px; /* Диаметр круга */
+  background-color: #535353; /* Темно-серый цвет */
+  border-radius: 50%; /* Скругление до круга */
+  top: 8px; /* Положение по вертикали чуть выше середины */
+  border: 1px solid #343434;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle.left {
+  left: 33px; /* Положение первого круга по горизонтали */
+}
+
+.icon-circle.right {
+  right: 33px; /* Положение второго круга по горизонтали */
+}
+.label {
+  position: absolute;
+  top: 60px; /* Отступ сверху для надписи */
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label.left {
+  right: 57px;
+}
+
+.label.right {
+  left: 57px;
+}
+
+.history {
+  position: relative;
+  margin: 10px auto; /* Небольшие отступы сверху и по бокам */
+  width: 300px; /* Ширина надписи */
+  text-align: left; /* Выравнивание текста по левому краю */
+  font-family: 'Rubik', sans-serif; /* Шрифт Rubik */
+  font-weight: 600; /* Тонкость regular */
+  font-size: 16px; /* Размер шрифта 20 */
+  color: #1B1B1B; /* Черный цвет текста */
+  left: 10px; /* Отступ сверху */
+}
+
+.history-line {
+  position: relative;
+  margin: 0px auto; /* Небольшие отступы сверху и по бокам */
+  width: 300px; /* Ширина линии */
+  border-bottom: 1px solid #1B1B1B; /* Черная линия толщиной 2 пикселя */
+}
